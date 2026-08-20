@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для Маи 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="app">
+    <section class="screen active" id="screen1">
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter">
+            <div class="letter-text">Для Маи 💌</div>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="flap"></div>
+          <div class="seal">♥</div>
+        </div>
+      </div>
+
+      <h1>У меня для тебя кое-что есть...</h1>
+      <p class="subtitle">Открой конверт</p>
+      <button class="main-btn" id="openBtn">Открыть 💌</button>
+    </section>
+
+    <section class="screen" id="screen2">
+      <div class="card">
+        <div class="emoji-big">🌷</div>
+        <p class="small-title">Мая, это для тебя</p>
+        <h2>Пойдёшь со мной<br>на прогулку?</h2>
+        <p class="text">Я хочу провести этот день вместе с тобой.</p>
+
+        <div class="choice-area" id="choiceArea">
+          <button class="yes-btn" id="yesBtn">Да ❤️</button>
+          <button class="no-btn" id="noBtn">Нет 🙈</button>
+        </div>
+
+        <p class="hint" id="hint">Попробуй нажать «Нет» 😏</p>
+      </div>
+    </section>
+
+    <section class="screen" id="screen3">
+      <div class="card">
+        <div class="emoji-big">✨</div>
+        <p class="small-title">Отлично!</p>
+        <h2>Тогда выбираем наш день</h2>
+
+        <label class="field-label" for="date">Дата</label>
+        <input class="field" id="date" type="date">
+
+        <label class="field-label" for="time">Время</label>
+        <input class="field" id="time" type="time" value="18:00">
+
+        <label class="field-label" for="place">Место</label>
+        <select class="field" id="place">
+          <option value="Уютное кафе">☕ Уютное кафе</option>
+          <option value="Прогулка по городу">🌆 Прогулка по городу</option>
+          <option value="Кино">🎬 Кино</option>
+          <option value="Сюрприз">🎁 Сюрприз</option>
+        </select>
+
+        <button class="main-btn" id="continueBtn">Дальше →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen4">
+      <div class="card final-card">
+        <div class="confetti" aria-hidden="true">🎉</div>
+        <div class="emoji-big">💗</div>
+        <p class="small-title">Свидание забронировано</p>
+        <h2>Маябек + Амир красава</h2>
+
+        <div class="details">
+          <div><span>📅</span><strong id="finalDate">—</strong></div>
+          <div><span>⏰</span><strong id="finalTime">—</strong></div>
+          <div><span>📍</span><strong id="finalPlace">—</strong></div>
+        </div>
+
+        <p class="final-text">
+          Самое главное — не дата и не место.<br>
+          Главное, что мы будем вместе ❤️
+        </p>
+
+        <button class="main-btn" id="restartBtn">Открыть ещё раз ↻</button>
+      </div>
+    </section>
+  </main>
+
+  <audio id="bgMusic" loop>
+    <!-- Положи свой music.mp3 рядом с index.html и раскомментируй строку ниже -->
+    <!-- <source src="music.mp3" type="audio/mpeg"> -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
